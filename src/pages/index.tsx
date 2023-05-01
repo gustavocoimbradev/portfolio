@@ -152,7 +152,7 @@ export default function Home() {
 
           <div className="row">
             <div className="col">
-              <div className="text-secondary fw-600 mb-2">Hello, my name is</div>
+              <div className="text-secondary fw-600 mb-2">Hi, my name is</div>
               <div className="text-light fw-600 display-4">Gustavo Coimbra</div>
               <div className="text-info fw-600 display-4 mb-2">Full-stack developer</div>
               <div className="text-info">I&apos;ve been studying programming since I was 11 years old. Now I&apos;m {yearsOld} years old.</div>
