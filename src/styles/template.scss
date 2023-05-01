@@ -44,7 +44,7 @@ a {
     text-decoration: none;
 }
 
-.btn-dark:hover {
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
     background-color: lighten($dark, 2%);
 }
 
