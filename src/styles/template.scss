@@ -1,0 +1,50 @@
+
+
+$primary: #0A192F;
+$secondary: #3A9A8E;
+$light: #CBD6F6;
+$info: #8891AF;
+$dark: #040F1F;
+$btn-border-radius: 13px;
+$btn-border-width: 0px;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body{
+    background-color: $primary;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.btn-icon {
+    margin-top: -5px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.labels{
+    font-size: 13px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-dark:hover {
+    background-color: lighten($dark, 2%);
+}
+
