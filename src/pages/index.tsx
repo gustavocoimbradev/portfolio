@@ -155,7 +155,7 @@ export default function Home() {
               <div className="text-secondary fw-600 mb-2">Hello, my name is</div>
               <div className="text-light fw-600 display-4">Gustavo Coimbra</div>
               <div className="text-info fw-600 display-4 mb-2">Full-stack developer</div>
-              <div className="text-info">I've been studying programming since I was 11 years old. Now I'm {yearsOld} years old.</div>
+              <div className="text-info">I&apos;ve been studying programming since I was 11 years old. Now I&apos;m {yearsOld} years old.</div>
             </div>
           </div>
 
@@ -182,7 +182,7 @@ export default function Home() {
 
             {arrayProjects.map((project, index) => (
 
-              <div className="col-12 col-sm-5 col-md-4 col-lg-3 p-2">
+              <div key={index} className="col-12 col-sm-5 col-md-4 col-lg-3 p-2">
 
                 <div className="modal modal-sm fade" id={`project-` + index}>
                   <div className="modal-dialog">
@@ -199,7 +199,7 @@ export default function Home() {
 
                         {arrayProjects[index].links.map((button, index) => (<>
 
-                          <a target="_blank" href={button.url} className="btn btn-light w-100 my-1">{button.title}</a>
+                          <a key={index} target="_blank" href={button.url} className="btn btn-light w-100 my-1">{button.title}</a>
 
                         </>))}
 
