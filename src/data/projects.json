@@ -1,0 +1,118 @@
+[
+    {
+        "category": 1,
+        "title": "Calculator",
+        "description": "Modern and clean calculator made using pure react native",
+        "labels": [
+            "Front-end",
+            "React Native",
+            "Nerdamer"
+        ],
+        "links": [
+            {
+                "title": "Github repository",
+                "url": "https://github.com/gustavocoimbradev/calculator"
+            }
+        ]
+    },
+    {
+        "category": 1,
+        "title": "Authentication",
+        "description": "Signup and signin mobile app made using React Native and MongoDB",
+        "labels": [
+            "Front-end",
+            "Back-end",
+            "React Native",
+            "MongoDB"
+        ],
+        "links": [
+            {
+                "title": "Github repository",
+                "url": "https://github.com/gustavocoimbradev/authentication"
+            }
+        ]
+    },
+    {
+        "category": 4,
+        "title": "Auto address",
+        "description": "Autocomplete address based on entered zip code (Brazil)",
+        "labels": [
+            "PHP",
+            "Javascript",
+            "jQuery",
+            "ViaCep API"
+        ],
+        "links": [
+            {
+                "title": "Github repository",
+                "url": "https://github.com/gustavocoimbradev/auto-address"
+            },
+            {
+                "title": "Live demo",
+                "url": "https://insider.blue/github/auto-address/"
+            }
+        ]
+    },
+    {
+        "category": 1,
+        "title": "Infinite scroll",
+        "description": "Example of infinite scroll using React Native and the Github API",
+        "labels": [
+            "Front-end",
+            "React Native"
+        ],
+        "links": [
+            {
+                "title": "Github repository",
+                "url": "https://github.com/gustavocoimbradev/infinite-scroll/"
+            }
+        ]
+    },
+    {
+        "category": 1,
+        "title": "Sinopses Game",
+        "description": "Mini movie/series guessing game based on sarcastic plots",
+        "labels": [
+            "Front-end",
+            "React Native"
+        ],
+        "links": [
+            {
+                "title": "Github repository",
+                "url": "https://github.com/gustavocoimbradev/sinopses"
+            }
+        ]
+    },
+    {
+        "category": 3,
+        "title": "Crud PHP (MVC)",
+        "description": "CRUD with PHP using MVC architecture",
+        "labels": [
+            "Back-end",
+            "PHP",
+            "API Rest"
+        ],
+        "links": [
+            {
+                "title": "Github repository",
+                "url": "https://github.com/gustavocoimbradev/crud-php"
+            }
+        ]
+    },
+    {
+        "category": 2,
+        "title": "My portfolio",
+        "description": "Page with my projects and a little about me",
+        "labels": [
+            "Front-end",
+            "ReactJS",
+            "React Native"
+        ],
+        "links": [
+            {
+                "title": "Github repository",
+                "url": "https://github.com/gustavocoimbradev/portfolio"
+            }
+        ]
+    }
+]

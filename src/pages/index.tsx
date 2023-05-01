@@ -1,11 +1,17 @@
+import React, { useState } from 'react';
+
 import Head from 'next/head'
 import { Open_Sans } from 'next/font/google'
 import Image from 'next/image';
 
 const font = Open_Sans({ subsets: ['latin'] })
 
+import categories from '../data/categories.json'
+import projects from '../data/projects.json'
 
 export default function Home() {
+
+  const [category, setCategory] = useState(categories[0].id)
 
   /** Years old */
   const today = new Date();
@@ -13,128 +19,7 @@ export default function Home() {
   const diference = today.getTime() - birthday.getTime();
   const yearsOld = Math.floor(diference / (1000 * 60 * 60 * 24 * 365.25));
 
-  /** My projects */
-  const arrayProjects = [
 
-    {
-      title: 'Calculator',
-      description: 'Modern and clean calculator made using pure react native',
-      labels: [
-        'Front-end',
-        'React Native',
-        'Nerdamer'
-      ],
-      links: [
-        {
-          title: 'Github repository',
-          url: 'https://github.com/gustavocoimbradev/calculator'
-        }
-      ]
-    },
-
-    {
-      title: 'Authentication',
-      description: 'Signup and signin mobile app made using React Native and MongoDB',
-      labels: [
-        'Front-end',
-        'Back-end',
-        'React Native',
-        'MongoDB'
-      ],
-      links: [
-        {
-          title: 'Github repository',
-          url: 'https://github.com/gustavocoimbradev/authentication'
-        }
-      ]
-    },
-
-    
-    {
-      title: 'Auto address',
-      description: 'Autocomplete address based on entered zip code (Brazil)',
-      labels: [
-        'PHP',
-        'Javascript',
-        'jQuery',
-        'ViaCep API'
-      ],
-      links: [
-        {
-          title: 'Github repository',
-          url: 'https://github.com/gustavocoimbradev/auto-address'
-        },
-
-        {
-          title: 'Live demo',
-          url: 'https://insider.blue/github/auto-address/'
-        }
-      ]
-    },
-
-    {
-      title: 'Infinite scroll',
-      description: 'Example of infinite scroll using React Native and the Github API',
-      labels: [
-        'Front-end',
-        'React Native'
-      ],
-      links: [
-        {
-          title: 'Github repository',
-          url: 'https://github.com/gustavocoimbradev/infinite-scroll/'
-        }
-      ]
-    },
-
-    {
-      title: 'Sinopses Game',
-      description: 'Mini movie/series guessing game based on sarcastic plots',
-      labels: [
-        'Front-end',
-        'React Native'
-      ],
-      links: [
-        {
-          title: 'Github repository',
-          url: 'https://github.com/gustavocoimbradev/sinopses'
-        }
-      ]
-    },
-
-    {
-      title: 'Crud PHP (MVC)',
-      description: 'CRUD with PHP using MVC architecture',
-      labels: [
-        'Back-end',
-        'PHP',
-        'API Rest'
-      ],
-      links: [
-        {
-          title: 'Github repository',
-          url: 'https://github.com/gustavocoimbradev/crud-php'
-        }
-      ]
-    },
-
-    {
-      title: 'My portfolio',
-      description: 'Page with my projects and a little about me',
-      labels: [
-        'Front-end',
-        'ReactJS',
-        'React Native'
-      ],
-      links: [
-        {
-          title: 'Github repository',
-          url: 'https://github.com/gustavocoimbradev/portfolio'
-        }
-      ]
-    },
-
-  ]
 
   return (
     <>
@@ -172,32 +57,39 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row mt-5">
-            <div className="col">
-              <div className="text-light fw-600 mb-2">My projects</div>
+          <hr className="my-4" />
+
+          <div className="row">
+            <div className="col categories">
+
+              {categories.map((categoryRow, index) => (
+                <div key={index}>
+                  <input checked={(category === categoryRow.id)} onChange={() => setCategory(categoryRow.id)} name="category" className="d-none" type="radio" value={categoryRow.id} id={`category-` + categoryRow.id} />
+                  <label htmlFor={`category-` + categoryRow.id} className={`fw-600 mb-2 category`}>{categoryRow.title}</label>
+                </div>
+              ))}
+
             </div>
           </div>
 
           <div className="row mt-2" id="projects">
 
-            {arrayProjects.map((project, index) => (
+            {projects.map((project, index) => (
 
-              <div key={index} className="col-12 col-sm-5 col-md-4 col-lg-3 p-2">
+              <div key={index} className={`col-12 col-sm-5 col-md-4 col-lg-3 p-2 ` + (category == project.category ? `` : `d-none`)}>
 
                 <div className="modal modal-sm fade" id={`project-` + index}>
                   <div className="modal-dialog">
 
 
                     <div className="modal-content">
-
-
                       <div className="modal-header text-center">
                         <h6 className="modal-title" id="exampleModalLabel">What do you wanna see?</h6>
                       </div>
 
                       <div className="modal-body">
 
-                        {arrayProjects[index].links.map((button, index) => (<>
+                        {projects[index].links.map((button, index) => (<>
 
                           <a key={index} target="_blank" href={button.url} className="btn btn-light w-100 my-1">{button.title}</a>
 
@@ -212,7 +104,7 @@ export default function Home() {
                 <a className="btn btn-dark text-start p-3 w-100 h-100" href="#" data-bs-toggle="modal" data-bs-target={`#project-` + index}>
                   <div className="text-light fw-600 mb-1">{project.title}</div>
                   <div className="text-light fw-300 mb-2">{project.description}</div>
-                  <div className="labels text-secondary fw-600">{arrayProjects[index].labels.join(' • ')}</div>
+                  <div className="labels text-secondary fw-600">{projects[index].labels.join(' • ')}</div>
                 </a>
 
               </div>

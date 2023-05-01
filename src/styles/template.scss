@@ -52,3 +52,17 @@ a {
     background-color: $dark;
 }
 
+.categories {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+input[type=radio] + label {
+    cursor: pointer;
+    color: $info;
+}
+
+input[type=radio]:checked + label {
+    color: $light;
+}
