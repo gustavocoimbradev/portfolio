@@ -2,7 +2,8 @@
     {
         "category": 1,
         "title": "Calculator",
-        "description": "Modern and clean calculator made using pure react native",
+        "image": "https://user-images.githubusercontent.com/115879524/226935346-64b81d74-7235-4921-a96b-d8e54e1a9cb6.jpg",
+"description": "Modern and clean calculator made using pure react native",
         "labels": [
             "Front-end",
             "React Native",
@@ -18,7 +19,8 @@
     {
         "category": 1,
         "title": "Authentication",
-        "description": "Signup and signin mobile app made using React Native and MongoDB",
+        "image": "https://user-images.githubusercontent.com/115879524/225163093-48bf3788-8d16-4d26-ab00-31e7a4cf271d.png",
+"description": "Signup and signin mobile app made using React Native and MongoDB",
         "labels": [
             "Front-end",
             "Back-end",
@@ -35,7 +37,8 @@
     {
         "category": 4,
         "title": "Auto address",
-        "description": "Autocomplete address based on entered zip code (Brazil)",
+        "image": "",
+"description": "Autocomplete address based on entered zip code (Brazil)",
         "labels": [
             "PHP",
             "Javascript",
@@ -56,7 +59,8 @@
     {
         "category": 1,
         "title": "Infinite scroll",
-        "description": "Example of infinite scroll using React Native and the Github API",
+        "image": "https://user-images.githubusercontent.com/115879524/226671912-c664b00b-47de-415c-afd0-6229cbed8e7a.jpg",
+"description": "Example of infinite scroll using React Native and the Github API",
         "labels": [
             "Front-end",
             "React Native"
@@ -71,7 +75,8 @@
     {
         "category": 1,
         "title": "Sinopses Game",
-        "description": "Mini movie/series guessing game based on sarcastic plots",
+        "image": "https://user-images.githubusercontent.com/115879524/232176915-6b8fae36-4294-4d57-8744-fd367b387aaa.png",
+"description": "Mini movie/series guessing game based on sarcastic plots",
         "labels": [
             "Front-end",
             "React Native"
@@ -86,7 +91,8 @@
     {
         "category": 3,
         "title": "Crud PHP (MVC)",
-        "description": "CRUD with PHP using MVC architecture",
+        "image": "",
+"description": "CRUD with PHP using MVC architecture",
         "labels": [
             "Back-end",
             "PHP",
@@ -102,11 +108,13 @@
     {
         "category": 2,
         "title": "My portfolio",
-        "description": "Page with my projects and a little about me",
+        "image": "/portfolio-thumbnail.png",
+"description": "Page with my projects and a little about me",
         "labels": [
             "Front-end",
-            "ReactJS",
-            "React Native"
+            "React.JS",
+            "NextJS",
+            "Figma"
         ],
         "links": [
             {
@@ -118,7 +126,8 @@
     {
         "category": 2,
         "title": "Rava Imóveis",
-        "description": "Real estate showcase with administrative panel",
+        "image": "https://insider.blue/wp-content/uploads/2023/04/rava-1024x586.jpg",
+"description": "Real estate showcase with administrative panel",
         "labels": [
             "Front-end",
             "jQuery",
@@ -132,9 +141,10 @@
         ]
     },
     {
-        "category": 5,
+        "category": 2,
         "title": "Dra. Evelyne Borges de Mattos",
-        "description": "",
+        "image": "https://insider.blue/wp-content/uploads/2023/04/evelyne-1024x586.png",
+"description": "",
         "labels": [
             "Wordpress",
             "Elementor"
@@ -147,9 +157,10 @@
         ]
     },
     {
-        "category": 5,
+        "category": 2,
         "title": "Projeto Futuro Militar",
-        "description": "",
+        "image": "https://insider.blue/wp-content/uploads/2023/04/pfm-1024x586.jpg",
+"description": "",
         "labels": [
             "Wordpress",
             "Elementor"
@@ -162,9 +173,10 @@
         ]
     },
     {
-        "category": 5,
+        "category": 2,
         "title": "RAD Advogados",
-        "description": "",
+        "image": "https://insider.blue/wp-content/uploads/2023/02/rad-4-1024x584.jpg",
+"description": "",
         "labels": [
             "Wordpress",
             "Elementor"
@@ -177,9 +189,10 @@
         ]
     },
     {
-        "category": 5,
+        "category": 2,
         "title": "Viana & Arantes",
-        "description": "",
+        "image": "https://insider.blue/wp-content/uploads/2023/02/viana-2-1024x585.jpg",
+"description": "",
         "labels": [
             "Wordpress",
             "Elementor"
@@ -192,9 +205,26 @@
         ]
     },
     {
-        "category": 5,
+        "category": 2,
         "title": "Alisson Jordão",
-        "description": "",
+        "image": "https://insider.blue/wp-content/uploads/2023/02/alisson-2-1024x584.jpg",
+"description": "",
+        "labels": [
+            "Wordpress",
+            "Elementor"
+        ],
+        "links": [
+            {
+                "title": "Live demo",
+                "url": "https://alissonjordao.adv.br/"
+            }
+        ]
+    },
+    {
+        "category": 2,
+        "title": "Insider Blue",
+        "image": "/ib-thumbnail.png",
+"description": "",
         "labels": [
             "Wordpress",
             "Elementor"

@@ -56,7 +56,13 @@ a {
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
+    overflow-x: auto;
 }
+
+.category {
+    white-space: nowrap;
+}
+
 
 input[type=radio] + label {
     cursor: pointer;

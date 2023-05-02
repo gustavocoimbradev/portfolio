@@ -63,9 +63,9 @@ export default function Home() {
             <div className="col categories">
 
               {categories.map((categoryRow, index) => (
-                <div key={index}>
+                <div key={index} className={`category`}>
                   <input checked={(category === categoryRow.id)} onChange={() => setCategory(categoryRow.id)} name="category" className="d-none" type="radio" value={categoryRow.id} id={`category-` + categoryRow.id} />
-                  <label htmlFor={`category-` + categoryRow.id} className={`fw-600 mb-2 category`}>{categoryRow.title}</label>
+                  <label htmlFor={`category-` + categoryRow.id} className={`fw-600 mb-2`}>{categoryRow.title}</label>
                 </div>
               ))}
 
@@ -102,9 +102,20 @@ export default function Home() {
                 </div>
 
                 <a className="btn btn-dark text-start p-3 w-100 h-100" href="#" data-bs-toggle="modal" data-bs-target={`#project-` + index}>
+
+                {project.image ?
+                    <div className="text-light fw-600 mb-3">
+                      <Image style={{width: '100%', height: '150px', objectFit: 'cover', objectPosition: 'center'}} alt={project.title} src={project.image} width={500} height={500} />
+                    </div>
+                    : ``}
+
                   <div className="text-light fw-600 mb-1">{project.title}</div>
+
                   <div className="text-light fw-300 mb-2">{project.description}</div>
+
                   <div className="labels text-secondary fw-600">{projects[index].labels.join(' • ')}</div>
+
+
                 </a>
 
               </div>
