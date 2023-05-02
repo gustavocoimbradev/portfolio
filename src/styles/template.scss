@@ -59,6 +59,11 @@ a {
     overflow-x: auto;
 }
 
+.categories::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
 .category {
     white-space: nowrap;
 }
